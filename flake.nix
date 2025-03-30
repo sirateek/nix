@@ -1,5 +1,5 @@
 {
-  description = "Example nix-darwin system flake";
+  description = "Tonnam nix-darwin system flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -13,7 +13,8 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
-        [ pkgs.vim
+        [ 
+          pkgs.vim
         ];
 
       # Necessary for using flakes on this system.

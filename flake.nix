@@ -29,6 +29,8 @@
             pkgs.android-tools
             pkgs.wireshark
             pkgs.arc-browser
+            pkgs.discord
+            pkgs.go
           ];
 
           # Necessary for using flakes on this system.

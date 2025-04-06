@@ -31,6 +31,7 @@
             pkgs.arc-browser
             pkgs.discord
             pkgs.go
+            pkgs.vscode
           ];
 
           # Necessary for using flakes on this system.

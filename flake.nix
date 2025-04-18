@@ -32,6 +32,7 @@
             pkgs.discord
             pkgs.go
             pkgs.vscode
+            pkgs.kubectl
           ];
 
           # Necessary for using flakes on this system.

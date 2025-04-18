@@ -33,6 +33,7 @@
             pkgs.go
             pkgs.vscode
             pkgs.kubectl
+            pkgs.kubernetes-helm
           ];
 
           # Necessary for using flakes on this system.

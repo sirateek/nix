@@ -53,6 +53,12 @@
           # Homebrew
           homebrew = {
             enable = true;
+            taps = [
+              "derailed/k9s"
+            ];
+            brews = [
+              "derailed/k9s/k9s"
+            ];
             casks = [
               "warp"
             ];

@@ -57,9 +57,11 @@
             enable = true;
             taps = [
               "derailed/k9s"
+              "leoafarias/fvm"
             ];
             brews = [
               "derailed/k9s/k9s"
+              "leoafarias/fvm/fvm"
             ];
             casks = [
               "warp"

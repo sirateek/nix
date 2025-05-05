@@ -34,6 +34,9 @@
             pkgs.vscode
             pkgs.kubectl
             pkgs.kubernetes-helm
+            pkgs.android-tools
+            pkgs.nmap
+            pkgs.pulumi
           ];
 
           # Necessary for using flakes on this system.

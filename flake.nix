@@ -37,6 +37,7 @@
             pkgs.android-tools
             pkgs.nmap
             pkgs.pulumi
+            pkgs.pulumictl
           ];
 
           # Necessary for using flakes on this system.

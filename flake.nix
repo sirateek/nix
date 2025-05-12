@@ -38,6 +38,7 @@
             pkgs.nmap
             pkgs.pulumi
             pkgs.pulumictl
+            pkgs.cloudflared
           ];
 
           # Necessary for using flakes on this system.

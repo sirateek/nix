@@ -39,6 +39,8 @@
             pkgs.pulumi
             pkgs.pulumictl
             pkgs.cloudflared
+            pkgs.python314
+            pkgs.nodejs_23
           ];
 
           # Necessary for using flakes on this system.

@@ -19,6 +19,10 @@
       configuration =
         { pkgs, config, ... }:
         {
+          nixpkgs.config.permittedInsecurePackages = [
+            "arc-browser-1.106.0-66192"
+          ];
+
           nixpkgs.config.allowUnfree = true;
 
           # List packages installed in system profile. To search by name, run:
@@ -40,7 +44,11 @@
             pkgs.pulumictl
             pkgs.cloudflared
             pkgs.python314
-            pkgs.nodejs_23
+            pkgs.jsonnet
+            pkgs.claude-code
+            pkgs.minikube
+            pkgs.pulumiPackages.pulumi-go
+            pkgs.arping
           ];
 
           # Necessary for using flakes on this system.
@@ -58,6 +66,8 @@
           # Used for backwards compatibility, please read the changelog before changing.
           # $ darwin-rebuild changelog
           system.stateVersion = 6;
+
+          system.primaryUser = "sirateek";
 
           # Homebrew
           homebrew = {

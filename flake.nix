@@ -48,10 +48,7 @@
             pkgs.pulumiPackages.pulumi-go
             pkgs.arping
             pkgs.bun
-            pkgs.kcat
             pkgs.terraform
-            pkgs.glab
-            pkgs.opentofu
             pkgs.ansible
           ];
 

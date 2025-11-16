@@ -40,8 +40,6 @@
             pkgs.kubernetes-helm
             pkgs.android-tools
             pkgs.nmap
-            pkgs.pulumi
-            pkgs.pulumictl
             pkgs.cloudflared
             pkgs.python314
             pkgs.jsonnet
@@ -49,6 +47,12 @@
             pkgs.minikube
             pkgs.pulumiPackages.pulumi-go
             pkgs.arping
+            pkgs.bun
+            pkgs.kcat
+            pkgs.terraform
+            pkgs.glab
+            pkgs.opentofu
+            pkgs.ansible
           ];
 
           # Necessary for using flakes on this system.
@@ -79,6 +83,9 @@
             brews = [
               "derailed/k9s/k9s"
               "leoafarias/fvm/fvm"
+              "influxdb-cli"
+              "nvm"
+              "pulumi/tap/pulumi"
             ];
             casks = [
               "warp"

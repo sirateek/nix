@@ -20,9 +20,9 @@
         { pkgs, config, ... }:
         {
           nixpkgs.config.permittedInsecurePackages = [
-            "arc-browser-1.106.0-66192"
           ];
 
+	  nixpkgs.config.allowRemovedPackages = true;
           nixpkgs.config.allowUnfree = true;
 
           # List packages installed in system profile. To search by name, run:
@@ -32,8 +32,6 @@
             pkgs.nixfmt-rfc-style
             pkgs.android-tools
             pkgs.wireshark
-            pkgs.arc-browser
-            pkgs.discord
             pkgs.go
             pkgs.vscode
             pkgs.kubectl
@@ -50,6 +48,18 @@
             pkgs.bun
             pkgs.terraform
             pkgs.ansible
+            pkgs.uv
+            pkgs.liquibase
+            pkgs.golangci-lint
+            pkgs.buf
+            pkgs.zstd
+            pkgs.confluent-platform
+	    pkgs.docker
+	    pkgs.docker-credential-helpers
+	    pkgs.docker-compose
+	    pkgs.lazygit
+	    pkgs.gemini-cli
+            pkgs.gh
           ];
 
           # Necessary for using flakes on this system.
@@ -83,7 +93,8 @@
               "influxdb-cli"
               "nvm"
               "pulumi/tap/pulumi"
-            ];
+              "firebase-cli"
+	    ];
             casks = [
               "warp"
             ];
